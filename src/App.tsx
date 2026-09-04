@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { feed as seedFeed, initialLibrary, formatDuration, type FeedItem, type LibraryItem } from './data'
 import { BookSheet } from './components/BookSheet'
 import { LiveFeed } from './components/LiveFeed'
-import { Player } from './components/Player'
+import { Reader } from './components/Reader'
 import { Vinyl } from './components/Vinyl'
 import {
   BatteryIcon,
@@ -98,7 +98,7 @@ export default function App() {
       ]
     })
     showToast('Added to your library')
-    // Let the sheet get out of the way before the player rises.
+    // Let the sheet get out of the way before the reader rises.
     window.setTimeout(() => {
       setNowPlaying(item)
       setPlayerOpen(true)
@@ -238,7 +238,7 @@ export default function App() {
             onJoin={join}
           />
 
-          <Player item={nowPlaying} open={playerOpen} onClose={closePlayer} />
+          <Reader item={nowPlaying} open={playerOpen} onClose={closePlayer} />
         </div>
       </div>
 

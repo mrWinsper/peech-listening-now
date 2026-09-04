@@ -115,3 +115,28 @@ export const BatteryIcon = ({ size = 26, ...p }: P) => (
     <path d="M23.5 4.5v4a2 2 0 0 0 0-4Z" fill="currentColor" opacity="0.5" />
   </svg>
 )
+
+export const ChevronLeftIcon = ({ size = 22, ...p }: P) => (
+  <svg {...base(size, p)} strokeWidth={2.4}>
+    <path d="m15 5-7 7 7 7" />
+  </svg>
+)
+
+export const CloseIcon = ({ size = 18, ...p }: P) => (
+  <svg {...base(size, p)} strokeWidth={2.2}>
+    <path d="M6 6l12 12M18 6 6 18" />
+  </svg>
+)
+
+export const GearIcon = ({ size = 20, ...p }: P) => (
+  <svg {...base(size, p)} fill="currentColor" stroke="none">
+    <path d="M10.3 2h3.4l.5 2.6c.6.2 1.1.5 1.6.9l2.5-.9 1.7 3-2 1.7c.1.6.1 1.2 0 1.8l2 1.7-1.7 3-2.5-.9c-.5.4-1 .7-1.6.9l-.5 2.6h-3.4l-.5-2.6a6.6 6.6 0 0 1-1.6-.9l-2.5.9-1.7-3 2-1.7a6.7 6.7 0 0 1 0-1.8l-2-1.7 1.7-3 2.5.9c.5-.4 1-.7 1.6-.9L10.3 2Zm1.7 7a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+  </svg>
+)
+
+export const ListIcon = ({ size = 18, ...p }: P) => (
+  <svg {...base(size, p)} strokeWidth={2.2}>
+    <path d="M9 6h11M9 12h11M9 18h11" />
+    <path d="M4 6h.01M4 12h.01M4 18h.01" strokeWidth={3} />
+  </svg>
+)
