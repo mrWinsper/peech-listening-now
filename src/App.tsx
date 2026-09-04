@@ -164,12 +164,6 @@ export default function App() {
             </nav>
 
             <div className="body">
-              <div className="addrow">
-                <button className="addrow__btn" aria-label="Add item">
-                  <PlusIcon size={18} />
-                </button>
-              </div>
-
               <LiveFeed items={feed} saved={saved} onOpen={openSheet} />
 
               <div className="list" role="list">

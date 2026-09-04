@@ -175,21 +175,8 @@ p, h1, h2, h3 { margin: 0; }
 }
 .body::-webkit-scrollbar { display: none; }
 
-.addrow {
-  padding: 14px 18px 6px;
-  background: linear-gradient(var(--bg-raised), var(--bg));
-}
-.addrow__btn {
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  background: var(--surface-2);
-  display: grid; place-items: center;
-  transition: transform 160ms var(--ease-out);
-}
-.addrow__btn:active { transform: scale(0.94); }
-
 /* ---------- Listening now (the new feature) ---------- */
-.live { padding: 14px 0 6px; }
+.live { padding: 16px 0 6px; }
 .live__head {
   display: flex;
   align-items: baseline;
