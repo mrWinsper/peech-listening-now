@@ -97,7 +97,10 @@ export function Reader({ item, open, onClose }: Props) {
     const topSafe = sr.top + 120
     const bottomSafe = sr.bottom - 160
     if (r.top < topSafe || r.bottom > bottomSafe) {
-      el.scrollIntoView({ block: 'center', behavior: 'smooth' })
+      // Scroll the text container only. scrollIntoView would also drag the
+      // overflow-hidden phone viewport, shifting the whole screen.
+      const target = scroller.scrollTop + (r.top - sr.top) - sr.height / 2 + r.height / 2
+      scroller.scrollTo({ top: target, behavior: 'smooth' })
     }
   }, [wordIdx, open])
 
